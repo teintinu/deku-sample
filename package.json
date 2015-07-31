@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "build_js": "jspm bundle-sfx index bundle.js",
+    "build_jsx": "jspm bundle-sfx index_jsx bundle.js",
+    "serve": "jspm run server"
+  },
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "deku": "npm:deku@^0.4.12"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
+}
